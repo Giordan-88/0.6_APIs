@@ -6,19 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>APIs</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 
 <body>
-<h1>Conversor Monetario</h1>
+    <h1>Conversor Monetario</h1>
     <input id="valores" type="number">
     <select name="" id="moneda">
-        <option value="">Dolar</option>
-        <option value="">Euro</option>
-        <option value="">Utm</option>
+        <option value="dolar">Dolar</option>
+        <option value="euro">Euro</option>
+        <option value="utm">Utm</option>
     </select>
     <button onclick="infoSearch()">Convertir</button>
     <div id="conversion"></div>
-    <div class="grafico"></div>
+    <div class="grafico">
+        <canvas id="myChart"></canvas>
+    </div>
 
     <script src="./assets/js/script.js"></script>
 </body>
