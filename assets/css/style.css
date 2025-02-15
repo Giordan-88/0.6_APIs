@@ -1,0 +1,78 @@
+
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: linear-gradient(45deg, #2d3436, #0a3d62, #1e272e, #3c6382);
+    background-size: 300% 300%;
+    animation: fondoAnimado 10s infinite alternate;
+    color: #dfe6e9;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes fondoAnimado {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }}
+
+
+    h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+input, select, button {
+    padding: 10px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    background: #576574;
+    color: white;
+}
+
+input {
+    width: 200px;
+    border: 2px solid #0a3d62;
+    background: #222f3e;
+    color: #dfe6e9;
+}
+
+select {
+    background: #1e3799;
+    color: white;
+    cursor: pointer;
+}
+
+button {
+    background: #3c6382;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background: #0a3d62;
+}
+
+#grafico {
+    margin-top: 20px;
+    width: 90%;
+    height: 70vh;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
